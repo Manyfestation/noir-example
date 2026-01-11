@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noir Schnorr Prover</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <h1>Noir Schnorr Prover</h1>
+
+  <div class="container">
+
+    <!-- Metrics Section -->
+    <div class="card">
+      <div class="section-title">Performance Metrics</div>
+      <div class="metrics-grid">
+        <div class="metric-item">
+          <span class="metric-label">Witness Gen</span>
+          <span class="metric-value" id="witness-time">0 ms</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label">Proof Gen</span>
+          <span class="metric-value" id="proof-time">0 ms</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label">Verify Time</span>
+          <span class="metric-value" id="verify-time">0 ms</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label">Proof Size</span>
+          <span class="metric-value" id="proof-size">0 bytes</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label">Status</span>
+          <span class="metric-value" id="main-status"
+            style="font-size: 1.2rem; white-space: nowrap;">Initializing...</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls Section -->
+    <div class="card">
+      <div class="section-title">Controls</div>
+      <div class="controls">
+
+        <div class="input-group">
+          <label>Message to Sign</label>
+          <input type="text" id="message-input" value="Yoni==Satoshi" />
+        </div>
+
+        <div class="input-group">
+          <label>Generated Signature (Hex)</label>
+          <input type="text" id="signature-display" readonly placeholder="Waiting for signature generation..." />
+        </div>
+
+        <div class="button-group">
+          <button id="gen-sig-btn">Generate Identity & Sign</button>
+          <button id="prove-btn" disabled>Prove</button>
+          <button id="verify-btn" disabled>Verify</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Logs Section -->
+    <div class="card">
+      <div class="section-title">Logs</div>
+      <div id="logs"></div>
+    </div>
+
+  </div>
+
+  <script type="module" src="/index.js"></script>
+</body>
+
+</html>

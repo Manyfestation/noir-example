@@ -1,0 +1,29 @@
+{
+  "name": "simple_proof",
+  "version": "1.0.0",
+  "description": "`Prover.toml` holds the circuit inputs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manyfestation/noir-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Manyfestation/noir-example/issues"
+  },
+  "homepage": "https://github.com/Manyfestation/noir-example#readme",
+  "dependencies": {
+    "@aztec/bb.js": "^3.0.0-nightly.20251104",
+    "@noir-lang/noir_js": "^1.0.0-beta.15",
+    "buffer": "^6.0.3",
+    "vite": "^5.4.21",
+    "vite-plugin-node-polyfills": "^0.17.0"
+  }
+}
